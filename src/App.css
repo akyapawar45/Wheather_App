@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Carter+One&family=Nunito:wght@1000&family=Oswald:wght@200;300;400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  
+}
+
+p {
+  font-size: 1.6rem;
+  color: #000000;
+
+}
+
+h1 {
+  font-size: 6rem;
+}
+h2{
+  font-size: 3rem; 
+}
+
+.App {
+  /* background: url('./Minimal\ Landscape\ wallpaper\ 8k\ [7680x4320].jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  filter: brightness(60%);
+}
+
+
+.App:before {
+  content: '';
+    
+  position: absolute;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+button{
+  
+  
+
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	color: black;
+
+	letter-spacing: .05em;
+left:4%;
+	padding: 1.1em 3.0em;
+	min-height: 2.1em;
+	position: relative;
+ margin-top: 20px;
+ font-weight: 800;
+ font-size: 1rem;
+	
+
+}
+button:hover
+{
+  
+    box-shadow: 0 0 20px 3px red;
+  
+}
+.App .search {
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.App input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #000000;
+  background-color: #ffffff67 ;
+
+}
+
+::placeholder {
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+font-size: 20px;
+font-weight: 700;
+
+}
+
+/* .box
+{
+  background: url('../src/Component/Assets/pexels-needtofly-10067811.jpg') no-repeat center center/cover;
+} */
+.container {
+  max-width: 800px;
+ 
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+ .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+ .bottom {
+  
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+
+flex-wrap: wrap;
+  width: 98%;
+position: absolute;
+top: 60%;
+flex-direction: column;
+overflow:scroll;
+
+height: 8rem;
+gap: 60px;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+}
+.bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+.not 
+{
+ 
+display:flex;
+align-items: center;
+justify-content:center;
+position: relative;
+
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* .clock
+{
+  height: 100px;
+  position:absolute;
+  top: 24%;
+  left: 30%;
+}
+.screen h1
+{
+font-size: 6vh;
+font-weight: 900;
+
+} */
+.location
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 80px;
+  
+}
+.location h1
+{
+  font-size: 3.9rem;
+  color:#eee8c9 ;
+}
+
+@media only screen and (max-width: 600px) {
+ h1 
+ {
+  font-size: 3rem;
+ }
+ .bottom{
+  height: 4.9rem;
+ }
+ .bottom p 
+ {
+  font-size: 1rem;
+  color: #eee8c9;
+ }
+ .App {
+  background: url('./_\ sky\ _.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  filter: brightness(50%); 
+}
+.cards
+{
+ width: 78%;
+}
+.location{
+  gap: 10px;
+  flex-direction: column;
+
+}
+.location h1 
+{
+  font-size: 3rem;
+}
+button{
+  padding: 0.5em 1.6em;
+	min-height: 1.1em;
+}
+.temp 
+{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+
+
+align-items: center;
+color: #eee8c9;
+}
+.App input {
+  padding: .6rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #000000;
+  background-color: #ffffff67 ;
+
+}
+
+::placeholder {
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+font-size: 16px;
+font-weight: 600;
+
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+position:absolute;
+z-index: -1;
+filter: brightness(50%); 
+
+}
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+position:absolute;
+z-index: -1;
+filter: brightness(50%); 
+
+}
